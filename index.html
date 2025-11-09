@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>バーチャル美術館</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="image-container">
+      <img id="art-image" src="https://picsum.photos/id/1011/800/1200" alt="artwork">
+    </div>
+    <div class="info-container" id="art-info">
+      <h2 id="art-title"></h2>
+      <p id="art-artist"></p>
+      <p id="art-description"></p>
+    </div>
+  </div>
+
+  <div class="survey-container" id="survey" style="display: none;">
+    <h2>アンケート</h2>
+    <form id="survey-form" target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSfDUMMYLINK/viewform">
+      <p>美術への興味は元々ありましたか？</p>
+      <label><input type="radio" name="q1" value="はい">はい</label>
+      <label><input type="radio" name="q1" value="いいえ">いいえ</label>
+
+      <p>このサイトを見て美術への興味は湧きましたか？</p>
+      <label><input type="radio" name="q2" value="はい">はい</label>
+      <label><input type="radio" name="q2" value="いいえ">いいえ</label>
+
+      <p>美術館に行ったことはありましたか？</p>
+      <label><input type="radio" name="q3" value="はい">はい</label>
+      <label><input type="radio" name="q3" value="いいえ">いいえ</label>
+
+      <p>このサイトを見て美術館に行きたいと思いましたか？</p>
+      <label><input type="radio" name="q4" value="はい">はい</label>
+      <label><input type="radio" name="q4" value="機会があったらはい">機会があったらはい</label>
+      <label><input type="radio" name="q4" value="いいえ">いいえ</label>
+
+      <button type="submit">送信</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
